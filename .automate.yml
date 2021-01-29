@@ -1,0 +1,11 @@
+repository: https://github.com/johnnyinkvine/vscode-experiment
+platforms:
+    production:
+        default_branch: master
+        max_releases: 3
+        servers:
+            prod-exemple-front-01:
+                host: thistest.sdrdm.com/
+                user: sdrdm
+                password: "%{L9ljJQ17m13%"
+                path: /home/sdrdm/domains_sub/thistest

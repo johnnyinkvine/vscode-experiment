@@ -61,7 +61,7 @@ record_template_include(array('dir' => dirname(__FILE__),'file' => basename(__FI
 		<header id="masthead" class="site-header <?php echo esc_attr( sd_vars()['page_settings']['SET']['header_classes'] ); ?>">	
 			<?php
 			/**
-			 * sadas
+			 * sadasfd
 			 * asdasdds
 			 * asdsda
 			 */
