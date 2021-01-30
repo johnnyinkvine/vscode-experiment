@@ -62,7 +62,7 @@ record_template_include(array('dir' => dirname(__FILE__),'file' => basename(__FI
 			<?php
 			/**
 			 * sadasfd
-			 * asdasdds
+			 * asdasddsff
 			 * asdsdadfd
 			 */
 				sd_set_template_part(array( 'target_file' => 'header-layout.php' ));
