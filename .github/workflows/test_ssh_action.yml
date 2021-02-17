@@ -32,7 +32,7 @@ jobs:
         host: 132.148.247.49
         username: sdrdm
         key: ${{ secrets.TEST_GITHUB_SECRET }}
-        port: 22
+        port: 2222
         script: |
           cd git
           git pull https://github.com/johnnyinkvine/vscode-experiment.git
