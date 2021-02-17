@@ -26,16 +26,35 @@ jobs:
     - name: sd my name for this step
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      uses: appleboy/ssh-action@master
+    #  uses: appleboy/ssh-action@master
 
-      with:
-        host: 132.148.247.49
-        username: sdrdm
-        key: ${{ secrets.TEST_GITHUB_SECRET }}
-        # port: 22
-        script: |
-          cd repositories/vscode-experiment
-          git pull https://github.com/johnnyinkvine/vscode-experiment.git
+    #  with:
+    #    host: 132.148.247.49
+    #    username: sdrdm
+    #    key: ${{ secrets.TEST_GITHUB_SECRET }}
+    #    # port: 22
+    #    script: |
+    #      cd repositories/vscode-experiment
+    #      git pull https://github.com/johnnyinkvine/vscode-experiment.git
+
+
+      uses: easingthemes/ssh-deploy@v2.1.5
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.TEST_GITHUB_SECRET }}
+      #    ARGS: "-rltgoDzvO --delete"
+      #    SOURCE: "dist/"
+          REMOTE_HOST: 132.148.247.49
+          REMOTE_USER: sdrdm
+          TARGET: testdeploy
+    #  with:
+    #    host: 132.148.247.49
+    #    username: sdrdm
+    #    key: ${{ secrets.TEST_GITHUB_SECRET }}
+    #    # port: 22
+    #    script: |
+    #      cd repositories/vscode-experiment
+    #      git pull https://github.com/johnnyinkvine/vscode-experiment.git
+
 
       #  git pull https://github.com/johnnyinkvine/vscode-experiment.git          
 
