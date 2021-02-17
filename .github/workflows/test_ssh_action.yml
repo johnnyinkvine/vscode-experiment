@@ -34,8 +34,7 @@ jobs:
         key: ${{ secrets.TEST_GITHUB_SECRET }}
         port: 22
         script: |
-          whoami
-          ls -al
+          cd tmp
 
       # Runs a single command using the runners shell
       # - name: Run a one-line script
