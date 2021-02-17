@@ -35,7 +35,7 @@ jobs:
         port: 22
         script: |
           cd git2
-          git pull https://github.com/johnnyinkvine/vscode-experiment.git
+          git clone https://github.com/johnnyinkvine/vscode-experiment.git
 
       # git pull origin master
 
