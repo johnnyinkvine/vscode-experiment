@@ -34,9 +34,8 @@ jobs:
         key: ${{ secrets.TEST_GITHUB_SECRET }}
         # port: 22
         script: |
-          cd repositories/vscode-experiment
-  #        git pull https://github.com/johnnyinkvine/vscode-experiment.git
-          git pull
+          cd repositories/vscode-experiment && git pull
+          
 
 
     #  uses: easingthemes/ssh-deploy@v2.1.5
