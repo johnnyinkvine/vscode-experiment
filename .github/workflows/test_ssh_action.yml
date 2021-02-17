@@ -35,7 +35,7 @@ jobs:
         port: 22
         script: |
           cd tmp
-          ls
+          git pull origin master
 
       # Runs a single command using the runners shell
       # - name: Run a one-line script
