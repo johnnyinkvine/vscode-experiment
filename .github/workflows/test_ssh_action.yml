@@ -34,7 +34,7 @@ jobs:
         key: ${{ secrets.TEST_GITHUB_SECRET }}
         port: 22
         script: |
-          cd git2
+          cd repositories
           git pull https://github.com/johnnyinkvine/vscode-experiment.git
 
       # git pull origin master
