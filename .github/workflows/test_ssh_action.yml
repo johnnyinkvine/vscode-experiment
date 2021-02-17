@@ -35,7 +35,9 @@ jobs:
         port: 22
         script: |
           cd tmp
-          git pull origin master
+          git clone https://github.com/johnnyinkvine/vscode-experiment
+
+      # git pull origin master
 
       # Runs a single command using the runners shell
       # - name: Run a one-line script
