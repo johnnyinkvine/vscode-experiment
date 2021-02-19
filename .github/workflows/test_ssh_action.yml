@@ -31,7 +31,7 @@ jobs:
       with:
         host: 132.148.247.49
         username: sdrdm
-        key: ${{ secrets.TEST_GITHUB_SECRET }}
+        key: ${{ secrets.SD_RSA_KEY }}
         # port: 22
         script: |
           cd repositories/vscode-experiment && git pull
